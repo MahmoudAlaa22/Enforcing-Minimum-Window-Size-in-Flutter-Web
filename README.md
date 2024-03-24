@@ -14,5 +14,21 @@ The Minimum Size script ensures that the window dimensions meet a specified mini
 ```html
 <!-- Include the script in your HTML file -->
 <script>
-  // Paste the provided script here
+ function checkWindowSize() {
+    // Specify the minimum width and height for the window
+    const minWidth = 800;
+    const minHeight = 600;
+
+    // Check the current window dimensions
+    if (window.innerWidth < minWidth || window.innerHeight < minHeight) {
+      // Resize the window to meet the minimum requirements
+      window.resizeTo(Math.max(window.innerWidth, minWidth), Math.max(window.innerHeight, minHeight));
+    }
+  }
+
+  // Add the event listener to the window resize event
+  window.addEventListener('resize', checkWindowSize);
+
+  // Call the function initially to ensure the window size meets the requirements
+  checkWindowSize();
 </script>
