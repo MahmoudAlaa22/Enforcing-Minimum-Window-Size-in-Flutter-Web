@@ -37,8 +37,9 @@ window.addEventListener('resize', enforceMinimumSize);
 // Call function initially to enforce minimum size on page load
 enforceMinimumSize();
 </script>
+---
 
-Considerations:
+🤔 Considerations:
 User Experience: 🌟 Enforcing a minimum window size can improve user experience by ensuring that the layout remains usable and visually appealing.
 
 Responsiveness: 📱 Ensure that the minimum window size is compatible with various screen sizes and resolutions to maintain responsiveness.
