@@ -4,14 +4,11 @@ Ensuring a minimum window size for your Flutter web application can significantl
 
 ## 🛠️ Implementation Steps:
 
-1. **Create JavaScript Function:**
-   Write a JavaScript function to enforce the minimum window size. This function should resize the window back to the minimum dimensions if the user attempts to resize it below the specified threshold.
+1. **Modify web/index.html:**
+   Open your Flutter project and locate the `web/index.html` file. Add a `<script>` tag inside the `<head>` tag or right before the closing `</body>` tag.
 
-2. **Attach Function to Window Resize Event:**
-   Attach the JavaScript function to the window resize event listener so that it is triggered whenever the window size changes. This ensures consistent enforcement of the minimum size.
-
-3. **Specify Minimum Size:**
-   Define the minimum width and height for the window to ensure that the layout remains usable and visually appealing across various devices and screen sizes.
+2. **Add JavaScript to Disable Inspect:**
+   Within the `<script>` tag, insert the following JavaScript code. This code aims to disable right-click and prevent common keyboard shortcuts used for opening developer tools.
 
 ## 📝 Example JavaScript Code:
 
@@ -38,7 +35,6 @@ window.addEventListener('resize', enforceMinimumSize);
 enforceMinimumSize();
 </script>
 ```
----
 
 🤔 Considerations:
 User Experience: 🌟 Enforcing a minimum window size can improve user experience by ensuring that the layout remains usable and visually appealing.
