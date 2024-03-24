@@ -38,6 +38,7 @@ window.addEventListener('resize', enforceMinimumSize);
 enforceMinimumSize();
 </script>
 ```
+---
 
 🤔 Considerations:
 User Experience: 🌟 Enforcing a minimum window size can improve user experience by ensuring that the layout remains usable and visually appealing.
